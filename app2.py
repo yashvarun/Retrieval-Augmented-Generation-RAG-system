@@ -51,7 +51,7 @@ with st.sidebar:
         st.session_state.SERPAPI_KEY = api_key_input
     elif "SERPAPI_KEY" not in st.session_state:
         # Default placeholder (Replace this with your actual key if you want)
-        st.session_state.SERPAPI_KEY = "0738e953a480169f7baf9a8ed867cbcec91c18eecc08857813edfc4b5d67313d"
+        st.session_state.SERPAPI_KEY = "Your SerpAPI Key here!"
 
     st.divider()
     
@@ -208,3 +208,4 @@ if prompt := st.chat_input("Ex: Best mechanical keyboard under ₹5000"):
 
             except Exception as e:
                 st.error(f"Error: {e}")
+
